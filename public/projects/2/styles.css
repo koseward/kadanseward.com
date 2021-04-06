@@ -1,0 +1,82 @@
+body{
+  background-color: #ffe5b4;
+}
+
+.essay{
+  background-color: #ffcc99;
+  width: 50%;
+  margin: auto;
+  padding-left: 3%;
+  padding-right: 3%;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.opener{
+  text-align: center;
+}
+
+.title{
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.subtitle{
+  font-weight: normal;
+  font-size: 1.25em;
+  margin-top: 0;
+}
+
+.info{
+  text-indent: 0;
+}
+
+.section_head{
+  font-size: 1.5em;
+}
+
+.essay_head{
+  font-size: 1.25em;
+}
+
+.superscript{
+  vertical-align: super;
+  font-size: .5em;
+  line-height: normal;
+}
+
+table{
+  border-collapse: collapse;
+  background-color: inherit;
+  text-align: center;
+  word-wrap: normal;
+}
+
+table, th, td{
+  border-style: solid;
+  border-width: 2px;
+}
+
+tr:nth-child(2n-1){
+  background-color: #ffb4a4;
+}
+
+img{
+    width: 100%;
+}
+
+.caption{
+  font-weight: bold;
+}
+
+q{
+  quotes: """ """;
+}
+
+a{
+  word-wrap: break-word;
+}
+
+p{
+  text-indent: 1em;
+}

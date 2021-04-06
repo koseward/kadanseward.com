@@ -1,0 +1,24 @@
+html{
+  background-color: #FFEED2;
+}
+.grid-container{
+  display: inline-grid;
+  border-collapse: collapse;
+  grid-template-columns: 100px 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px 100px 100px;
+}
+.grid-item{
+  border: solid;
+  border-width: 5px;
+  width: 100px;
+  height: 100px;
+  background-color: #EEEEEE;
+}
+
+.js-off{
+  border: solid;
+  border-width: 5px;
+  width: 100px;
+  height: 100px;
+  background-color: #555555;
+}

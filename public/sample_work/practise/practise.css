@@ -1,0 +1,27 @@
+p
+{
+  text-align: center;
+  color: red;
+}
+
+h1
+{
+  border: solid 5px black
+}
+
+#textTypes
+{
+  text-align: right;
+  color: #FFFFFF;
+}
+
+.poem
+{
+  text-align: center;
+  color: blue;
+}
+
+body
+{
+  background-color: #e6ffff;
+}
