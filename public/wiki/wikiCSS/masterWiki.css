@@ -95,6 +95,11 @@
   text-indent: 1.5em;
 }
 
+.bodyOrderList{
+    indent: 2em;
+    padding-left: 2em;
+}
+
 body{
   background-color: #708090;
   margin: 0;
