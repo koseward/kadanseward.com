@@ -2,14 +2,14 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Software Architecture-SAWiki</title>
     <link rel="stylesheet" href="wikiCSS/masterWiki.css">
   </head>
   <body>
 
     <div class="navBar">
 
-      <h1 class="webTitle"><a class="navLink" href="../">The Software Architecture Wiki</a></h1>
+      <h1 class="webTitle"><a class="navLink" href="#">The Software Architecture Wiki</a></h1>
 
     </div>
 
@@ -18,31 +18,53 @@
         Connected Pages
       </p>
       <ul class="sideBarList">
-        <li><a class="sideLink" href="#">Dummy Link 1</a></li>
-        <li><a class="sideLink" href="#">Dummy Link 2</a></li>
-        <li><a class="sideLink" href="#">Dummy Link 3</a></li>
-        <li><a class="sideLink" href="#">Dummy Link 4</a></li>
+        <li><a class="sideLink" href="Microservices/">Microservices</a></li>
+        <li><a class="sideLink" href="Monolith/">Monoliths</a></li>
+        <li><a class="sideLink" href="Layered/">Layered Architecture</a></li>
+        <li><a class="sideLink" href="EventDriven/">Event-Driven Architecture</a></li>
+        <li><a class="sideLink" href="Reactive/">Reactive Architecture</a></li>
+        <li><a class="sideLink" href="SOA/">Service Oriented Architecture</a></li>
       </ul>
     </div>
 
     <div class="mainBody">
-      <h1>Title</h1>
+      <h1>Software Architecture</h1>
       <hr>
       <h2>Overview</h2>
       <hr>
-
-
       
-      <h2>Topic1</h2>
+      <p class="bodyPara">
+	Software Architecture, often confused with <a href="SoftwareDesign/">Software Design</a>, is the process of designing a structure of a system.[synopsis] The software architecture can be seen as a kind of blueprint for a set of <a href="Requirements/">requirements</a>. Or another way, it is how the highest level components of a system work together.[martinfowler] Choosing a Software architecture occurs seperately from implementation, and consists of making nonfunctional decisions.[tutorialspoint] Software Architecure is also referred to as a system's architectural sytle. 
+      </p>
+      <p class="bodyPara">
+	There are countless software architectures, and each have their own benefits that impact quality, such as <a href="PerformanceMetrics/">performance</a>, <a href="SoftwareMaintenence/">maintainability</a>, cost, and other attributes of software engineering.[synopsis] Often, when detirmining which architecture to implement, it is important to notice the non-functional requirements of the system. A software engineer with notice the <a href="QualityAttributes/">quality attributes</a> that are mandatory for a system, and design or implement an architecture matching these attributes.[medium] A good choice architecture is seen to reduce the overall cost of a system, in terms of work-hours spent, over the course of several weeks.[martinfowler]
+      </p>
+
+      <h2>History</h2>
+      <hr>
+      
+      <p class="bodyPara">
+	In the abstract, software architecture originates in the 1960's, as software began to increase in complexity. Before this time, systems were small enough to not bother with a complex abstraction. As systems grew in size, it became reasonable to construct more complex descriptions regarding the function of a system. Many broke down these more complex descriptions into four layers, with the lowest layer being implementation, and the highest layer being the software architecture.[psu.edu]
+      </p>
+      <p class="bodyPara">
+	The term began to gain traction in the 1980's, and the first book that discussed software architecture explicitly, and as the main focus was in 1990.[psu.edu]
+      </p>
+            
+      <h2>Types of Software Architecture</h2>
       <hr>
 
-
-      
-      <h2>Topic2</h2>
-      <hr>
-
-
-      
+      <p class="bodyPara">
+	There are many different types of computer architecture, each of which have their own benefits and trade-offs. Each one is useful in the right scenario. The following are examples of some of the most popular Software Architectures. 
+      </p>
+      <ul class=bodyList>
+	<li><a href="Monolith/">Monolithic Architecture</a>: The most common architecture, often chosen by default. The entire system is in the same <a href="Repository/">repository</a> and available to all developers. </li>
+	<li><a href="Microservices">Microservices</a>: A more novel architecture that is picking up traction with newer web developers such as Netflix. Focuses on breaking a large system into smaller, individually releaseable services.</li>
+	<li><a href="Layered">Layered Architecture</a>: Focuses on breaking the program into groups of subtasks, generally into four "layers:" the Presentation layer, the Application layer, the Business logic layer, and the Data access layer.[towardDataScience]</li>
+	<li><a href="EventDriven">Event-driven Architecture</a>: Focuses on reacting to given data, whether that is a keystroke, a mouse-click, or other. Popular with web services, expecially those developed with JavaScript.[techBeacon]</li>
+	<li><a href="SOA">Service Oriented Architecture</a>: Breakes an entire company into smaller services for the purpose of code re-use and project velocity.[Cite that one article]</li>
+	<li><a href="Reactive">Reactive Architecture</a>: Develops for changes in the system, in order to facillitate responsive, resilient, elastic, and message driven, services.[Dzone]</li>
+      </ul>
+            
       <h2>References</h2>
       <hr>
 
