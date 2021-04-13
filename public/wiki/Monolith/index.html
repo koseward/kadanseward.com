@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Monolithic Architecture -SAWiki</title>
     <link rel="stylesheet" href="../wikiCSS/masterWiki.css">
   </head>
   <body>
@@ -18,35 +18,83 @@
         Connected Pages
       </p>
       <ul class="sideBarList">
-        <li><a class="sideLink" href="#">Dummy Link 1</a></li>
-        <li><a class="sideLink" href="#">Dummy Link 2</a></li>
-        <li><a class="sideLink" href="#">Dummy Link 3</a></li>
-        <li><a class="sideLink" href="#">Dummy Link 4</a></li>
+        <li><a class="sideLink" href="../">Software Architecture</a></li>
+        <li><a class="sideLink" href="../Repository">Repository</a></li>
+        <li><a class="sideLink" href="../Microservices">Microservices</a></li>
+        <li><a class="sideLink" href="../TechnicalDebt">Technical Debt</a></li>
       </ul>
     </div>
 
     <div class="mainBody">
-      <h1>Title</h1>
+      <h1>Monolithic Architecture</h1>
       <hr>
       <h2>Overview</h2>
       <hr>
 
-
+          
+      <p class="bodyPara">
+	The monolithic architecture is a <a class="bodyLink" href="../">software architecture</a> common in legacy software, small software, and, notably, Google.[4] Monolithic architectures have been the most common architecture throughout the history of software engineering. As an example, Google, on the back-end, consists of billions of lines of code, in more than nine million source files, almost all of which are accessible by all of the developers at Google.[4] Having all of the code in one location comes with this expectation - which leads to a culture of collaboration and openness. Monoliths are centralized. This means that the single repository is where all the functionality is. It also entails strict versioning.
+      </p>
+          
+      <div class="stubHeader">
+	<img src="image1.jpg" alt="Monolithic Architecture">
+	<p>A depiction of a monolithic architecture</p>
+      </div>
       
-      <h2>Topic1</h2>
+      <h2>History</h2>
       <hr>
 
-
-      
-      <h2>Topic2</h2>
+      <p class="bodyPara">
+	Monoliths have been the primary software architecture for the majority of the history of software engineering.[4] This is because of technical restraints, limiting what a program could do.
+      </p>
+            
+      <h2>Characteristics</h2>
       <hr>
 
+      <ul>
+	<li>Simple: Monoliths feature a single repository and are therefore simple to understand the basic structure of the architecture.</li>
+	<li>Efficient: Monoliths do not have to deal with a large number of moving parts, and so there is no waste due to that movement.</li>
+      </ul>
+      
+      <h2>Comparison with other Architectures</h2>
+      <hr>
 
+      <ul>
+	<li>
+	  <h3>Vs. Microservice Architectures:</h3>
+	  <p class="bodyPara">
+	    Complexity is a major difference between the Monolith and Microservices. While the <a class="bodyLink" href="../Monolith">Monolith</a> exists in a single <a class="bodyLink" href="../Repository">repository</a>, Microservices have a repository for each of the services. The increase in complexity comes with greater cognitive load for managers. There is also increased deployment complexity. The release of the software is much more complicated and requires automation, while the monolith has a comparatively simple deployment.[1] 
+	  </p>
+	  <p class="bodyPara">
+	    Performance is also to be considered when choosing an architecture. In many ways, the monolith is superior. When handling requests, the monolith, at all amounts, was faster than that of the microservices. This is often attributed to the gateways of the microservices wasting resources, while the monolith does not have these wastes. Even when there are services handling the microservices, the performance is still lacking.[2]
+	  </p>
+	  <p class="bodyPara">
+	    Cost is cheaper when a microservices is implemented. Infrastructure costs, as well as the cost of <a class="bodyLink" href="../TechnicalDebt">technical debt</a> is significantly lower when implementing microservices. Infrastructure costs refer to the cost of running a server, and microservices have costs up to 60% less than the monolith.[5] And whereas technical debt increases exponentially in monoliths, they increase linearly with microservices. Thus, the cost is much lower.[6]
+	  </p>
+	  </li>
+      </ul>
       
       <h2>References</h2>
       <hr>
 
-
+      <p class="bodyPara">
+[1] Ciera Jaspan et al. 2018. Advantages and disadvantages of a monolithic repository. Proceedings of the 40th International Conference on Software Engineering: Software Engineering in Practice (September 2018), 225–234. DOI:http://dx.doi.org/10.1145/3183519.3183550 
+      </p>
+      <p class="bodyPara">
+[2] Jesper Holmström. 2020. Distributed Queries:An Evaluation of theMicroservice Architecture. Thesis. Found at: https://www.diva-portal.org/smash/get/diva2:1438874/FULLTEXT01.pdf
+      </p>
+      <p class="bodyPara">
+[3] Mario Villamizar et al. 2017. Cost comparison of running web applications in the cloud using monolithic, microservice, and AWS Lambda architectures. Service Oriented Computing and Applications 11, 2 (April 2017), 233–247. DOI:http://dx.doi.org/10.1007/s11761-017-0208-y 
+      </p>
+      <p class="bodyPara">
+[4]Rachel Potvin and Josh Levenberg. 2016. Why Google stores billions of lines of code in a single repository. Communications of the ACM 59, 7 (July 2016), 78–87. DOI:http://dx.doi.org/10.1145/2854146
+      </p>
+      <p class="bodyPara">
+[5] Tomas Cerny, Michael J. Donahoo, and Michal Trnka. 2018. Contextual understanding of microservice architecture. ACM SIGAPP Applied Computing Review 17, 4 (January 2018), 29–45. DOI:http://dx.doi.org/10.1145/3183628.3183631 
+      </p>
+      <p class="bodyPara">
+[6] Valentina Lenarduzzi, Francesco Lomio, Nyyti Saarimäki, and Davide Taibi. 2020. Does migrating a monolithic system to microservices decrease the technical debt? Journal of Systems and Software 169 (2020), 110710. DOI:http://dx.doi.org/10.1016/j.jss.2020.110710 
+      </p>
       
     </div>
 

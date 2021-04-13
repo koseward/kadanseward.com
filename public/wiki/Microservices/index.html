@@ -21,7 +21,6 @@
         <li><a class="sideLink" href="../SOA">Service Oriented Architecture</a></li>
         <li><a class="sideLink" href="../Monolith">Monolithic Architecture</a></li>
         <li><a class="sideLink" href="../Agility">Agility</a></li>
-        <li><a class="sideLink" href="#">Dummy Link 4</a></li>
       </ul>
     </div>
 
@@ -32,14 +31,19 @@
       <hr>
 
       <p class="bodyPara">
-	Microservices are a popular Software Architecture, often used in modern, large-scale web services, such as Amazon or Netflix.[That one source] As described by Red Hat, a major open source developer, Microservices involve breaking down a larger software endeavor into smaller pieces, which are then developed individually in smaller developmental teams and are individually releasable.[red hat] Each of these services are fine-grained, and have a low level of coupling.[context.understanding of microservices] Often these sections are separate, and are not accessible to teams, giving each piece of the system a privacy that other architectures lack.
+	Microservices are a popular Software Architecture, often used in modern, large-scale web services, such as Amazon or Netflix.[5] As described by Red Hat, a major open source developer, Microservices involve breaking down a larger software endeavor into smaller pieces, which are then developed individually in smaller developmental teams and are individually releasable.[2] Each of these services are fine-grained, and have a low level of coupling.[6] Often these sections are separate, and are not accessible to teams, giving each piece of the system a privacy that other architectures lack.
       </p>
 
+      <div class="stubHeader">
+	<img src="image1.gif" width="500px" height="400px">
+	<p>A depiction of a Microservice architecture</p>
+      </div>
+            
       <h2>History</h2>
       <hr>
-
+      
       <p class="bodyPara">
-	Microservices are a type of the <a href="../SOA">Service Oriented Architecture</a>. The difference being that while SOA involve all of the systems of a company, microservices involve only the pieces of an individual system.
+	Microservices are a type of the <a class="bodyLink" href="../SOA">Service Oriented Architecture</a>. The difference being that while SOA involve all of the systems of a company, microservices involve only the pieces of an individual system.[6]
       </p>
       <p class="bodyPara">
 
@@ -47,16 +51,56 @@
       
       <h2>Characteristics</h2>
       <hr>
-      
-      <h2>Comparison with Monolithic Architecture</h2>
+
+      <ul>
+	<li><a class="bodyLink" href="../Modularity">Modularity</a>: Microservices are stored in several separate <a class="bodyLink" href="../Repository">repositories</a>.[6]</li>
+	<li>Privacy: Due to the modularity of the architecture, each service can be developed in small teams. Thus there can be parts of the system that some developers do not have access to.[1] </li>
+	<li>Independent Release: Because of the modularity of microservices, and low coupling, each package can be released on its own, without the rest of the system. This means that code reuse is much easier.[2]</li>
+      </ul>
+            
+      <h2>Comparison with other Architectures</h2>
       <hr>
-
-
+      
+      <ul>
+	<li>
+	  <h3>Vs. Monolithic Architectures:</h3>
+	  <p class="bodyPara">
+	    Complexity is a major difference between the Monolith and Microservices. While the <a class="bodyLink" href="../Monolith">Monolith</a> exists in a single <a class="bodyLink" href="../Repository">repository</a>, Microservices have a repository for each of the services. The increase in complexity comes with greater cognitive load for managers. There is also increased deployment complexity. The release of the software is much more complicated and requires automation, while the monolith has a comparatively simple deployment.[3] 
+	  </p>
+	  <p class="bodyPara">
+	    Performance is also to be considered when choosing an architecture. In many ways, the monolith is superior. When handling requests, the monolith, at all amounts, was faster than that of the microservices. This is often attributed to the gateways of the microservices wasting resources, while the monolith does not have these wastes. Even when there are services handling the microservices, the performance is still lacking.[4]
+	  </p>
+	  <p class="bodyPara">
+	    Cost is cheaper when a microservices is implemented. Infrastructure costs, as well as the cost of <a class="bodyLink" href="../TechnicalDebt">technical debt</a> is significantly lower when implementing microservices. Infrastructure costs refer to the cost of running a server, and microservices have costs up to 60% less than the monolith.[5] And whereas technical debt increases exponentially in monoliths, they increase linearly with microservices. Thus, the cost is much lower.[7]
+	  </p>
+	  </li>
+      </ul>
+      
       
       <h2>References</h2>
       <hr>
-
-
+      
+      <p class="bodyPara">
+[1] Anon. What are microservices? Retrieved February 21, 2021 from https://www.redhat.com/en/topics/microservices/what-are-microservices
+      </p>
+      <p class="bodyPara">
+[2] Chris Richardson. What are microservices? Retrieved February 21, 2021 from https://microservices.io/
+      </p>
+      <p class="bodyPara">
+[3] Ciera Jaspan et al. 2018. Advantages and disadvantages of a monolithic repository. Proceedings of the 40th International Conference on Software Engineering: Software Engineering in Practice (September 2018), 225–234. DOI:http://dx.doi.org/10.1145/3183519.3183550 
+      </p>
+      <p class="bodyPara">
+[4] Jesper Holmström. 2020. Distributed Queries:An Evaluation of theMicroservice Architecture. Thesis. Found at: https://www.diva-portal.org/smash/get/diva2:1438874/FULLTEXT01.pdf
+      </p>
+      <p class="bodyPara">
+[5] Mario Villamizar et al. 2017. Cost comparison of running web applications in the cloud using monolithic, microservice, and AWS Lambda architectures. Service Oriented Computing and Applications 11, 2 (April 2017), 233–247. DOI:http://dx.doi.org/10.1007/s11761-017-0208-y 
+      </p>
+      <p class="bodyPara">
+[6] Tomas Cerny, Michael J. Donahoo, and Michal Trnka. 2018. Contextual understanding of microservice architecture. ACM SIGAPP Applied Computing Review 17, 4 (January 2018), 29–45. DOI:http://dx.doi.org/10.1145/3183628.3183631 
+      </p>
+      <p class="bodyPara">
+[7] Valentina Lenarduzzi, Francesco Lomio, Nyyti Saarimäki, and Davide Taibi. 2020. Does migrating a monolithic system to microservices decrease the technical debt? Journal of Systems and Software 169 (2020), 110710. DOI:http://dx.doi.org/10.1016/j.jss.2020.110710 
+      </p>
       
     </div>
 

@@ -91,6 +91,16 @@
     color: blue;
 }
 
+.stubHeader{
+    background-color: #dddddd;
+    border-style: solid;
+    border-radius: 4px;
+}
+
+.stubHeader > h3{
+    color: red;
+}
+
 .bodyPara{
   text-indent: 1.5em;
 }
