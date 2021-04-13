@@ -34,10 +34,10 @@
       <hr>
       
       <p class="bodyPara">
-	Software Architecture, often confused with <a class="bodyLink" href="SoftwareDesign/">Software Design</a>, is the process of designing a structure of a system.[synopsis] The software architecture can be seen as a kind of blueprint for a set of <a class="bodyLink" href="Requirements/">requirements</a>. Or another way, it is how the highest level components of a system work together.[martinfowler] Choosing a Software architecture occurs separately from implementation, and consists of making nonfunctional decisions.[tutorialspoint] Software Architecture is also referred to as a system's architectural style. 
+	Software Architecture, often confused with <a class="bodyLink" href="SoftwareDesign/">Software Design</a>, is the process of designing a structure of a system.[2] The software architecture can be seen as a kind of blueprint for a set of <a class="bodyLink" href="Requirements/">requirements</a>. Or another way, it is how the highest level components of a system work together.[5] Choosing a Software architecture occurs separately from implementation, and consists of making nonfunctional decisions.[1] Software Architecture is also referred to as a system's architectural style. 
       </p>
       <p class="bodyPara">
-	There are countless software architectures, and each have their own benefits that impact quality, such as <a class="bodyLink" href="PerformanceMetrics/">performance</a>, <a class="bodyLink" href="SoftwareMaintenence/">maintainability</a>, cost, and other attributes of software engineering.[synopsis] Often, when determining which architecture to implement, it is important to notice the non-functional requirements of the system. A software engineer with notice the quality attributes that are mandatory for a system, and design or implement an architecture matching these attributes.[medium] A good choice architecture is seen to reduce the overall cost of a system, in terms of work-hours spent, over the course of several weeks.[martinfowler]
+	There are countless software architectures, and each have their own benefits that impact quality, such as <a class="bodyLink" href="PerformanceMetrics/">performance</a>, <a class="bodyLink" href="SoftwareMaintenence/">maintainability</a>, cost, and other attributes of software engineering.[2] Often, when determining which architecture to implement, it is important to notice the non-functional requirements of the system. A software engineer with notice the quality attributes that are mandatory for a system, and design or implement an architecture matching these attributes.[6] A good choice architecture is seen to reduce the overall cost of a system, in terms of work-hours spent, over the course of several weeks.[5]
       </p>
 
       <div class="stubHeader">
@@ -49,10 +49,10 @@
       <hr>
       
       <p class="bodyPara">
-	In the abstract, software architecture originates in the 1960's, as software began to increase in complexity. Before this time, systems were small enough to not bother with a complex abstraction. As systems grew in size, it became reasonable to construct more complex descriptions regarding the function of a system. Many broke down these more complex descriptions into four layers, with the lowest layer being implementation, and the highest layer being the software architecture.[psu.edu]
+	In the abstract, software architecture originates in the 1960's, as software began to increase in complexity. Before this time, systems were small enough to not bother with a complex abstraction. As systems grew in size, it became reasonable to construct more complex descriptions regarding the function of a system. Many broke down these more complex descriptions into four layers, with the lowest layer being implementation, and the highest layer being the software architecture.[4]
       </p>
       <p class="bodyPara">
-	The term began to gain traction in the 1980's, and the first book that discussed software architecture explicitly, and as the main focus was in 1990.[psu.edu]
+	The term began to gain traction in the 1980's, and the first book that discussed software architecture explicitly, and as the main focus was in 1990.[4]
       </p>
             
       <h2>Types of Software Architecture</h2>
@@ -64,17 +64,37 @@
       <ul class=bodyList>
 	<li><a class="bodyLink" href="Monolith/">Monolithic Architecture</a>: The most common architecture, often chosen by default. The entire system is in the same <a class="bodyLink" href="Repository/">repository</a> and available to all developers. </li>
 	<li><a class="bodyLink" href="Microservices">Microservices</a>: A more novel architecture that is picking up traction with newer web developers such as Netflix. Focuses on breaking a large system into smaller, individually releasable services.</li>
-	<li><a class="bodyLink" href="Layered">Layered Architecture</a>: Focuses on breaking the program into groups of sub tasks, generally into four "layers:" the Presentation layer, the Application layer, the Business logic layer, and the Data access layer.[towardDataScience]</li>
-	<li><a class="bodyLink" href="EventDriven">Event-driven Architecture</a>: Focuses on reacting to given data, whether that is a keystroke, a mouse-click, or other. Popular with web services, especially those developed with JavaScript.[techBeacon]</li>
-	<li><a class="bodyLink" href="SOA">Service Oriented Architecture</a>: Breaks an entire company into smaller services for the purpose of code re-use and project velocity.[Cite that one article]</li>
-	<li><a class="bodyLink" href="Reactive">Reactive Architecture</a>: Develops for changes in the system, in order to facilitate responsive, resilient, elastic, and message driven, services.[Dzone]</li>
+	<li><a class="bodyLink" href="Layered">Layered Architecture</a>: Focuses on breaking the program into groups of sub tasks, generally into four "layers:" the Presentation layer, the Application layer, the Business logic layer, and the Data access layer.[7]</li>
+	<li><a class="bodyLink" href="EventDriven">Event-driven Architecture</a>: Focuses on reacting to given data, whether that is a keystroke, a mouse-click, or other. Popular with web services, especially those developed with JavaScript.[7]</li>
+	<li><a class="bodyLink" href="SOA">Service Oriented Architecture</a>: Breaks an entire company into smaller services for the purpose of code re-use and project velocity.</li>
+	<li><a class="bodyLink" href="Reactive">Reactive Architecture</a>: Develops for changes in the system, in order to facilitate responsive, resilient, elastic, and message driven, services.[3]</li>
       </ul>
             
       <h2>References</h2>
       <hr>
 
-
-      
+      <p class="bodyPara">
+[1]Anon. Software Architecture &amp; Design Introduction. Retrieved April 13, 2021 from https://www.tutorialspoint.com/software_architecture_design/introduction.htm 
+      </p>
+      <p class="bodyPara">
+[2]Anon. What Is Software Architecture &amp; Software Security Design and How Does It Work? Retrieved April 13, 2021 from https://www.synopsys.com/glossary/what-is-software-architecture.html 
+      </p>
+      <p class="bodyPara">
+[3]Ekaterina Novoseltseva. 2020. Reactive Architecture Benefits and Use Cases - DZone Performance. (May 2020). Retrieved April 13, 2021 from https://dzone.com/articles/reactive-architecture-benefits-amp-use-cases 
+      </p>
+      <p class="bodyPara">
+[4]Leonor Barroca, Jon Hall, and Patrick Hall. 2000. 1. An Introduction and History of SoftwareArchitectures, Components, and Reuse. In Software Architecture. London: Springer, 1–11. 
+      </p>
+      <p class="bodyPara">
+[5]Martin Fowler. 2019. Software Architecture Guide. (August 2019). Retrieved April 13, 2021 from https://martinfowler.com/architecture/ 
+      </p>
+      <p class="bodyPara">
+[6]Mohamed Aladdin. 2020. Software Architecture - The Difference Between Architecture and Design. (November 2020). Retrieved April 13, 2021 from https://codeburst.io/software-architecture-the-difference-between-architecture-and-design-7936abdd5830 
+      </p>
+      <p class="bodyPara">
+[7]Peter Wayner. 2020. How to choose the right software architecture: The top 5 patterns. (July 2020). Retrieved April 13, 2021 from https://techbeacon.com/app-dev-testing/top-5-software-architecture-patterns-how-make-right-choice 
+      </p>
+            
     </div>
 
   </body>
